@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { BookingLink } from "./BookingLink";
+
 export function Hero() {
   return (
     <section className="relative min-h-[100dvh] overflow-hidden pt-16">
@@ -29,15 +31,15 @@ export function Hero() {
           technology, and hospitality that matches your results.
         </p>
         <div className="mt-10 flex flex-wrap gap-4">
-          <Link
-            href="#contact"
-            className="inline-flex items-center justify-center rounded-full bg-spa-gold px-8 py-3.5 text-sm font-semibold uppercase tracking-wider text-spa-ink transition hover:bg-spa-gold/90"
-          >
+          <BookingLink className="inline-flex items-center justify-center rounded-full bg-spa-gold px-8 py-3.5 text-sm font-semibold uppercase tracking-wider text-spa-ink transition hover:bg-spa-gold/90">
+            Book appointment
+          </BookingLink>
+          <BookingLink className="inline-flex items-center justify-center rounded-full border border-white/20 px-8 py-3.5 text-sm font-semibold uppercase tracking-wider text-spa-cream transition hover:border-spa-gold/50 hover:bg-white/5">
             Schedule consultation
-          </Link>
+          </BookingLink>
           <Link
             href="#services"
-            className="inline-flex items-center justify-center rounded-full border border-white/20 px-8 py-3.5 text-sm font-semibold uppercase tracking-wider text-spa-cream transition hover:border-spa-gold/50 hover:bg-white/5"
+            className="inline-flex w-full items-center justify-center rounded-full border border-white/10 px-8 py-3.5 text-sm font-semibold uppercase tracking-wider text-stone-400 transition hover:border-spa-gold/30 hover:text-spa-cream sm:w-auto"
           >
             Explore services
           </Link>

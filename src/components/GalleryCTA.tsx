@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { OFFICIAL } from "@/config/official";
+
 export function GalleryCTA() {
   return (
     <section id="gallery" className="scroll-mt-24 py-20 sm:py-28">
@@ -29,7 +31,7 @@ export function GalleryCTA() {
                 Charleston, SC.
               </p>
               <Link
-                href="https://www.instagram.com/totality_medispa/"
+                href={OFFICIAL.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-8 inline-flex w-fit items-center gap-2 rounded-full border border-spa-gold/40 bg-spa-gold/10 px-6 py-3 text-sm font-semibold uppercase tracking-wider text-spa-cream transition hover:bg-spa-gold/20"
